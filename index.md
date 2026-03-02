@@ -16,7 +16,7 @@ Learn DDD with real C# implementations and production-ready code.
 - Email, Phone, Money, Address
 - [View Code](https://github.com/DanteTuraSalvador/TestNest.ValueObjects)
 
-**[Strongly Typed IDs](#)**
+**[Strongly Typed IDs](/2025/01/05/strongly-typed-ids-chapter-01.html)**
 - 3 chapters, 60 minutes
 - Type-safe identifiers
 - [View Code](https://github.com/DanteTuraSalvador/TestNest.StronglyTypeId)
