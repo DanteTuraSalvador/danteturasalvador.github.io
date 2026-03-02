@@ -11,7 +11,7 @@ Learn DDD with real C# implementations and production-ready code.
 
 ### Series 1: Foundation Patterns
 
-**[Value Objects](/2025/01/01/value-objects-chapter-01/)**
+**[Value Objects](/2025/01/01/value-objects-chapter-01.html)**
 - 4 chapters, 90 minutes
 - Email, Phone, Money, Address
 - [View Code](https://github.com/DanteTuraSalvador/TestNest.ValueObjects)
@@ -53,4 +53,4 @@ All code is open source and production-ready.
 
 ## Getting Started
 
-Start with the [Value Objects Series](/2025/01/01/value-objects-chapter-01/) to learn the fundamentals of Domain-Driven Design.
+Start with the [Value Objects Series](/2025/01/01/value-objects-chapter-01.html) to learn the fundamentals of Domain-Driven Design.
