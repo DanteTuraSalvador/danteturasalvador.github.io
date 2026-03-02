@@ -30,12 +30,7 @@ layout: default
 
   {{ content }}
 
-  {% include tutorial-nav.html
-    prev_title=page.prev_title
-    prev=page.prev
-    next_title=page.next_title
-    next=page.next
-  %}
+  {% include tutorial-nav.html prev_title=page.prev_title prev=page.prev next_title=page.next_title next=page.next %}
 
   {% if page.tags %}
   <div class="post-tags">
