@@ -215,5 +215,3 @@ public void UpdateEmail(Email newEmail)
 
 - [Source Code: TestNest.ValueObjects](https://github.com/DanteTuraSalvador/TestNest.ValueObjects)
 - [Eric Evans: Domain-Driven Design](https://domainlanguage.com/ddd/)
-
-{% include tutorial-nav.html %}

@@ -119,5 +119,3 @@ In [Chapter 2](/2025/01/02/value-objects-chapter-02.html), we'll explore the **V
 
 - [Source Code: TestNest.ValueObjects](https://github.com/DanteTuraSalvador/TestNest.ValueObjects)
 - [Wikipedia: Primitive Obsession](https://en.wikipedia.org/wiki/Primitive_obsession)
-
-{% include tutorial-nav.html %}

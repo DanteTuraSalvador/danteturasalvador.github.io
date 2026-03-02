@@ -238,5 +238,3 @@ You've implemented your first Value Object! In [Chapter 4](/2025/01/04/value-obj
 
 - [Complete Source Code: TestNest.ValueObjects](https://github.com/DanteTuraSalvador/TestNest.ValueObjects)
 - [Tests: EmailTests.cs](https://github.com/DanteTuraSalvador/TestNest.ValueObjects/blob/main/TestNest.ValueObjects.Tests/EmailTests.cs)
-
-{% include tutorial-nav.html %}

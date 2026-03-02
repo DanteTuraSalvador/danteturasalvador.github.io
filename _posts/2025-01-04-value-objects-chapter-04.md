@@ -340,5 +340,3 @@ Continue your DDD journey with:
 - [Strongly Typed IDs](#) - Type-safe identifiers
 - [Smart Enums](#) - State machines
 - [Result Pattern](#) - Functional error handling
-
-{% include tutorial-nav.html %}
