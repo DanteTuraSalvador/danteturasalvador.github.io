@@ -321,7 +321,13 @@ public class OrderService
 
 ## References
 
-- [Source Code: TestNest.StronglyTypedId](https://github.com/DanteTuraSalvador/TestNest.StronglyTypeId)
+- [Source Code: TestNest.StronglyTypedId](https://github.com/DanteTuraSalvador/TestNest.StronglyTypedId)
 - [Microsoft: Domain-Driven Design](https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/net-msdn-patterns-ddd)
+
+---
+
+## What's Next?
+
+In [Chapter 3](/2025/01/07/strongly-typed-ids-chapter-03.html), you'll learn how to integrate StronglyTypedId with Value Objects for a completely type-safe domain model!
 
 {% include tutorial-nav.html %}

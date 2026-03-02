@@ -145,7 +145,19 @@ In [Chapter 2](/2025/01/06/strongly-typed-ids-chapter-02.html), we'll explore th
 
 ## References
 
-- [Source Code: TestNest.StronglyTypedId](https://github.com/DanteTuraSalvador/TestNest.StronglyTypeId)
+- [Source Code: TestNest.StronglyTypedId](https://github.com/DanteTuraSalvador/TestNest.StronglyTypedId)
 - [Martin Fowler: Patterns of Enterprise Application Architecture](https://martinfowler.com/eaaCatalog/identityField.html)
+
+---
+
+## What's Next?
+
+Congratulations on completing Strongly Typed IDs series!
+
+Continue your DDD journey with:
+- [Smart Enums](/2025/01/08/smart-enums-chapter-01.html) - State machines
+- [Result Pattern](/2025/01/09/result-pattern-chapter-01.html) - Functional error handling
+- [Clean Architecture](#) - Architectural patterns
+- [CQRS](#) - Command Query Separation
 
 {% include tutorial-nav.html %}

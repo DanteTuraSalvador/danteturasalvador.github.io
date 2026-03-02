@@ -349,8 +349,20 @@ StronglyTypedId and Value Objects have minimal overhead:
 
 ## References
 
-- [Complete Source Code: TestNest.StronglyTypedId](https://github.com/DanteTuraSalvador/TestNest.StronglyTypeId)
+- [Complete Source Code: TestNest.StronglyTypedId](https://github.com/DanteTuraSalvador/TestNest.StronglyTypedId)
 - [Complete Source Code: TestNest.ValueObjects](https://github.com/DanteTuraSalvador/TestNest.ValueObjects)
 - [DDD Reference: Patterns](https://www.domainlanguage.com/ddd/reference/)
+
+---
+
+## What's Next?
+
+Congratulations on completing Strongly Typed IDs series!
+
+Continue your DDD journey with:
+- [Smart Enums](/2025/01/08/smart-enums-chapter-01.html) - State machines
+- [Result Pattern](/2025/01/09/result-pattern-chapter-01.html) - Functional error handling
+- [Clean Architecture](#) - Architectural patterns
+- [CQRS](#) - Command Query Separation
 
 {% include tutorial-nav.html %}
