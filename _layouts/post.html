@@ -31,12 +31,12 @@ layout: default
   {{ content }}
 
   <div class="tutorial-nav">
-    {% if page.prev %}
-    <a href="{{page.prev}}" class="nav-prev">← {{page.prev_title}}</a>
+    {% if page.prev_url %}
+    <a href="{{page.prev_url}}" class="nav-prev">← {{page.prev_title}}</a>
     {% endif %}
 
-    {% if page.next %}
-    <a href="{{page.next}}" class="nav-next">{{page.next_title}} →</a>
+    {% if page.next_url %}
+    <a href="{{page.next_url}}" class="nav-next">{{page.next_title}} →</a>
     {% endif %}
   </div>
 

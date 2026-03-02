@@ -11,7 +11,7 @@ chapter: 4
 prerequisites: "Chapter 3"
 estimated_time: "25 minutes"
 prev_title: "Chapter 3: Implementation - Your First Value Object"
-prev: "/2025/01/03/value-objects-chapter-03.html"
+prev_url: "/2025/01/03/value-objects-chapter-03.html"
 ---
 
 # Chapter 4: Advanced - Composing Value Objects

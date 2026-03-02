@@ -11,9 +11,9 @@ chapter: 1
 prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Homepage"
-prev: "/"
+prev_url: "/"
 next_title: "Chapter 2: Solution - Value Object Pattern"
-next: "/2025/01/02/value-objects-chapter-02.html"
+next_url: "/2025/01/02/value-objects-chapter-02.html"
 ---
 
 # Chapter 1: Problem - Primitive Obsession
