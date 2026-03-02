@@ -1,0 +1,9 @@
+<div class="tutorial-nav">
+  {% if include.prev %}
+  <a href="{{ include.prev }}" class="nav-prev">← {{ include.prev_title }}</a>
+  {% endif %}
+
+  {% if include.next %}
+  <a href="{{ include.next }}" class="nav-next">{{ include.next_title }} →</a>
+  {% endif %}
+</div>

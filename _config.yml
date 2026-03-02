@@ -1,0 +1,36 @@
+# Site settings
+title: DDD Tutorial Series
+description: Learn Domain-Driven Design with C# - Complete tutorial series with real-world examples
+author: Dante Salvador
+email: dante@example.com
+baseurl: ""
+url: "https://danteturasalvador.github.io"
+
+# GitHub integration
+github_username: DanteTuraSalvador
+github_repo: danteturasalvador.github.io
+
+# Build settings
+markdown: kramdown
+theme: minima
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclusions
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+
+# Post settings
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+      author: Dante Salvador
