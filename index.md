@@ -28,7 +28,7 @@ Learn DDD with real C# implementations and production-ready code.
 - State machines
 - [View Code](https://github.com/DanteTuraSalvador/TestNest.SmartEnums)
 
-**[Result Pattern](#)**
+**[Result Pattern](/2025/01/12/result-pattern-chapter-01.html)**
 - 4 chapters, 80 minutes
 - Functional error handling
 - [View Code](https://github.com/DanteTuraSalvador/TestNest.ResultPattern)
