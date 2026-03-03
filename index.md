@@ -35,7 +35,7 @@ Learn DDD with real C# implementations and production-ready code.
 
 ### Series 3: Architectural Patterns
 
-**[Clean Architecture](#)**
+**[Clean Architecture](/2025/01/16/clean-architecture-chapter-01.html)**
 - 5 chapters, 120 minutes
 - Layered architecture
 - [View Code](https://github.com/DanteTuraSalvador/MinimalAPICleanArchitecture)
