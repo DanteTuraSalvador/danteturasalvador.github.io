@@ -23,7 +23,7 @@ Learn DDD with real C# implementations and production-ready code.
 
 ### Series 2: Behavioral Patterns
 
-**[Smart Enums](#)**
+**[Smart Enums](/2025/01/08/smart-enums-chapter-01.html)**
 - 4 chapters, 80 minutes
 - State machines
 - [View Code](https://github.com/DanteTuraSalvador/TestNest.SmartEnums)
