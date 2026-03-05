@@ -21,6 +21,7 @@ navbar-links:
     - Clean Architecture: "/ddd/2025/01/16/clean-architecture-chapter-01.html"
     - CQRS: "/ddd/2025/01/21/cqrs-chapter-01.html"
   Tags: "tags"
+  Resume: "resume"
   About: "aboutme"
 
 # Author
