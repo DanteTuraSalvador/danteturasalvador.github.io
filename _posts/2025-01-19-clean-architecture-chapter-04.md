@@ -12,9 +12,9 @@ chapter: 4
 prerequisites: "Chapter 3"
 estimated_time: "25 minutes"
 prev_title: "Chapter 3: Implementation - Project Structure"
-prev_url: "/2025/01/18/clean-architecture-chapter-03.html"
+prev_url: "/ddd/2025/01/18/clean-architecture-chapter-03.html"
 next_title: "Chapter 5: Integration and Deployment"
-next_url: "/2025/01/20/clean-architecture-chapter-05.html"
+next_url: "/ddd/2025/01/20/clean-architecture-chapter-05.html"
 ---
 
 # Chapter 4: Domain Layer Implementation

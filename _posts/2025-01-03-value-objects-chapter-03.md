@@ -12,9 +12,9 @@ chapter: 3
 prerequisites: "Chapter 2"
 estimated_time: "30 minutes"
 prev_title: "Chapter 2: Solution - Value Object Pattern"
-prev_url: "/2025/01/02/value-objects-chapter-02.html"
+prev_url: "/ddd/2025/01/02/value-objects-chapter-02.html"
 next_title: "Chapter 4: Advanced - Composing Value Objects"
-next_url: "/2025/01/04/value-objects-chapter-04.html"
+next_url: "/ddd/2025/01/04/value-objects-chapter-04.html"
 ---
 
 # Chapter 3: Implementation - Your First Value Object

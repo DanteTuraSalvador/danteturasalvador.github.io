@@ -12,7 +12,7 @@ chapter: 4
 prerequisites: "Chapter 3"
 estimated_time: "25 minutes"
 prev_title: "Chapter 3: Implementation - Result and Result<T>"
-prev_url: "/2025/01/14/result-pattern-chapter-03.html"
+prev_url: "/ddd/2025/01/14/result-pattern-chapter-03.html"
 ---
 
 # Chapter 4: Advanced - Chaining, Mapping, and Async Support

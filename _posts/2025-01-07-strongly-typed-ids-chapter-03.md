@@ -12,7 +12,7 @@ chapter: 3
 prerequisites: "Chapter 2"
 estimated_time: "30 minutes"
 prev_title: "Chapter 2: Solution - StronglyTypedId Pattern"
-prev_url: "/2025/01/06/strongly-typed-ids-chapter-02.html"
+prev_url: "/ddd/2025/01/06/strongly-typed-ids-chapter-02.html"
 ---
 
 # Chapter 3: Integration with Value Objects

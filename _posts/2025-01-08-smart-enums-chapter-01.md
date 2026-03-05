@@ -12,9 +12,9 @@ chapter: 1
 prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Strongly Typed IDs Series"
-prev_url: "/2025/01/07/strongly-typed-ids-chapter-03.html"
+prev_url: "/ddd/2025/01/07/strongly-typed-ids-chapter-03.html"
 next_title: "Chapter 2: Solution - SmartEnum Pattern"
-next_url: "/2025/01/09/smart-enums-chapter-02.html"
+next_url: "/ddd/2025/01/09/smart-enums-chapter-02.html"
 ---
 
 # Chapter 1: Problem - State Management

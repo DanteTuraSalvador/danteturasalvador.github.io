@@ -12,9 +12,9 @@ chapter: 1
 prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Result Pattern Series"
-prev_url: "/2025/01/15/result-pattern-chapter-04.html"
+prev_url: "/ddd/2025/01/15/result-pattern-chapter-04.html"
 next_title: "Chapter 2: Solution - Clean Architecture"
-next_url: "/2025/01/17/clean-architecture-chapter-02.html"
+next_url: "/ddd/2025/01/17/clean-architecture-chapter-02.html"
 ---
 
 # Chapter 1: Problem - Layered Architecture Issues

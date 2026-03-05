@@ -10,12 +10,12 @@ url: "https://danteturasalvador.github.io"
 # Navigation
 navbar-links:
   DDD Series:
-    - Value Objects: "/2025/01/01/value-objects-chapter-01.html"
-    - Strongly Typed IDs: "/2025/01/05/strongly-typed-ids-chapter-01.html"
-    - Smart Enums: "/2025/01/08/smart-enums-chapter-01.html"
-    - Result Pattern: "/2025/01/12/result-pattern-chapter-01.html"
-    - Clean Architecture: "/2025/01/16/clean-architecture-chapter-01.html"
-    - CQRS: "/2025/01/21/cqrs-chapter-01.html"
+    - Value Objects: "/ddd/2025/01/01/value-objects-chapter-01.html"
+    - Strongly Typed IDs: "/ddd/2025/01/05/strongly-typed-ids-chapter-01.html"
+    - Smart Enums: "/ddd/2025/01/08/smart-enums-chapter-01.html"
+    - Result Pattern: "/ddd/2025/01/12/result-pattern-chapter-01.html"
+    - Clean Architecture: "/ddd/2025/01/16/clean-architecture-chapter-01.html"
+    - CQRS: "/ddd/2025/01/21/cqrs-chapter-01.html"
   Tags: "tags"
   About: "aboutme"
 

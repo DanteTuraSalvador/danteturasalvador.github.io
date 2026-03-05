@@ -12,9 +12,9 @@ chapter: 1
 prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Clean Architecture Series"
-prev_url: "/2025/01/20/clean-architecture-chapter-05.html"
+prev_url: "/ddd/2025/01/20/clean-architecture-chapter-05.html"
 next_title: "Chapter 2: Solution - CQRS Pattern"
-next_url: "/2025/01/22/cqrs-chapter-02.html"
+next_url: "/ddd/2025/01/22/cqrs-chapter-02.html"
 ---
 
 # Chapter 1: Problem - CRUD Complexity

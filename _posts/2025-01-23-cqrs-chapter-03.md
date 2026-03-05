@@ -12,9 +12,9 @@ chapter: 3
 prerequisites: "Chapter 2"
 estimated_time: "30 minutes"
 prev_title: "Chapter 2: Solution - CQRS Pattern"
-prev_url: "/2025/01/22/cqrs-chapter-02.html"
+prev_url: "/ddd/2025/01/22/cqrs-chapter-02.html"
 next_title: "Chapter 4: Advanced - Event Sourcing"
-next_url: "/2025/01/24/cqrs-chapter-04.html"
+next_url: "/ddd/2025/01/24/cqrs-chapter-04.html"
 ---
 
 # Chapter 3: Implementation - Commands and Queries
