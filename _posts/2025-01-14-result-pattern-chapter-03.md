@@ -3,7 +3,7 @@ layout: post
 title: "Part 3: Implementation - Result and Result<T>"
 date: 2025-01-14
 category: ddd
-thumbnail-img: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=200&fit=crop"
+thumbnail-img: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop"
 tags:
   - ddd
   - result-pattern

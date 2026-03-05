@@ -3,7 +3,7 @@ layout: post
 title: "Part 1: Problem - State Management"
 date: 2025-01-08
 category: ddd
-thumbnail-img: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=400&h=200&fit=crop"
+thumbnail-img: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop"
 tags:
   - ddd
   - smart-enums

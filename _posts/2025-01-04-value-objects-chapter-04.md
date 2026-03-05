@@ -3,7 +3,7 @@ layout: post
 title: "Part 4: Advanced - Composing Value Objects"
 date: 2025-01-04
 category: ddd
-thumbnail-img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop"
+thumbnail-img: "https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop"
 tags:
   - ddd
   - value-objects

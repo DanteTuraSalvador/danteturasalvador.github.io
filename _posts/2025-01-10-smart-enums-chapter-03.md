@@ -3,7 +3,7 @@ layout: post
 title: "Part 3: Implementation - CheckIn/CheckOut State Machine"
 date: 2025-01-10
 category: ddd
-thumbnail-img: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=400&h=200&fit=crop"
+thumbnail-img: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop"
 tags:
   - ddd
   - smart-enums

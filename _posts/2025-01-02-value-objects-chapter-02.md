@@ -3,7 +3,7 @@ layout: post
 title: "Part 2: Solution - Value Object Pattern"
 date: 2025-01-02
 category: ddd
-thumbnail-img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop"
+thumbnail-img: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop"
 tags:
   - ddd
   - value-objects

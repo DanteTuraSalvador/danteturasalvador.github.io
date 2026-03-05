@@ -3,7 +3,7 @@ layout: post
 title: "Part 2: Solution - StronglyTypedId Pattern"
 date: 2025-01-06
 category: ddd
-thumbnail-img: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=200&fit=crop"
+thumbnail-img: "https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=400&h=200&fit=crop"
 tags:
   - ddd
   - strongly-typed-ids
