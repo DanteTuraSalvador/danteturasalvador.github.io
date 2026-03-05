@@ -3,6 +3,7 @@ layout: post
 title: "Part 4: Advanced - Chaining, Mapping, and Async Support"
 date: 2025-01-15
 category: ddd
+thumbnail-img: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400&h=200&fit=crop"
 tags:
   - ddd
   - result-pattern

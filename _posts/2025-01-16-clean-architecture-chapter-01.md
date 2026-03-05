@@ -3,6 +3,7 @@ layout: post
 title: "Part 1: Problem - Layered Architecture Issues"
 date: 2025-01-16
 category: ddd
+thumbnail-img: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=200&fit=crop"
 tags:
   - ddd
   - clean-architecture

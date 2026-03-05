@@ -3,6 +3,7 @@ layout: post
 title: "Part 3: Implementation - Project Structure"
 date: 2025-01-18
 category: ddd
+thumbnail-img: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=200&fit=crop"
 tags:
   - ddd
   - clean-architecture

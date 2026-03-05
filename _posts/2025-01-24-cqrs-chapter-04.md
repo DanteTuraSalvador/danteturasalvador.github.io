@@ -3,6 +3,7 @@ layout: post
 title: "Part 4: Advanced - Event Sourcing"
 date: 2025-01-24
 category: ddd
+thumbnail-img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=200&fit=crop"
 tags:
   - ddd
   - cqrs

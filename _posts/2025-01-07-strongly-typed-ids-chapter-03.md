@@ -3,6 +3,7 @@ layout: post
 title: "Part 3: Integration with Value Objects"
 date: 2025-01-07
 category: ddd
+thumbnail-img: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=200&fit=crop"
 tags:
   - ddd
   - strongly-typed-ids
