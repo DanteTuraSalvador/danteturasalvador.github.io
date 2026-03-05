@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 1: Problem - ID Type Confusion"
 date: 2025-01-05
+category: ddd
 tags:
   - ddd
   - strongly-typed-ids

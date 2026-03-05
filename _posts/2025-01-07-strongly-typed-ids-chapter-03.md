@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 3: Integration with Value Objects"
 date: 2025-01-07
+category: ddd
 tags:
   - ddd
   - strongly-typed-ids

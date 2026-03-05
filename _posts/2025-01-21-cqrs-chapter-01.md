@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 1: Problem - CRUD Complexity"
 date: 2025-01-21
+category: ddd
 tags:
   - ddd
   - cqrs

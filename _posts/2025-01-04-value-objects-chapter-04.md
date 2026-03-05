@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 4: Advanced - Composing Value Objects"
 date: 2025-01-04
+category: ddd
 tags:
   - ddd
   - value-objects

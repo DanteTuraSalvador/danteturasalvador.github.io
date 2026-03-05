@@ -1,0 +1,9 @@
+{% if page.series %}
+<div class="series-info">
+  <span class="series-badge">{{ page.series | replace: '-', ' ' | capitalize }} Series - Chapter {{ page.chapter }}</span>
+  <div class="series-meta">
+    {% if page.prerequisites %}<strong>Prerequisites:</strong> {{ page.prerequisites }}{% endif %}
+    {% if page.estimated_time %} &middot; <strong>Estimated time:</strong> {{ page.estimated_time }}{% endif %}
+  </div>
+</div>
+{% endif %}

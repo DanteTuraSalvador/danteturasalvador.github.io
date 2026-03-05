@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 3: Implementation - Your First Value Object"
 date: 2025-01-03
+category: ddd
 tags:
   - ddd
   - value-objects

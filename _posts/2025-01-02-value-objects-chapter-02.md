@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 2: Solution - Value Object Pattern"
 date: 2025-01-02
+category: ddd
 tags:
   - ddd
   - value-objects

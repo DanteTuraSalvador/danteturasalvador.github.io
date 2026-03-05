@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 1: Problem - State Management"
 date: 2025-01-08
+category: ddd
 tags:
   - ddd
   - smart-enums

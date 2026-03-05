@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 3: Implementation - Project Structure"
 date: 2025-01-18
+category: ddd
 tags:
   - ddd
   - clean-architecture

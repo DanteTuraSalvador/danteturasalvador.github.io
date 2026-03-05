@@ -1,18 +1,34 @@
-# Site settings
-title: DDD Tutorial Series
-description: Learn Domain-Driven Design with C# - Complete tutorial series with real-world examples
-author: Dante Salvador
-email: dante@example.com
-baseurl: ""
+# Beautiful Jekyll
+remote_theme: daattali/beautiful-jekyll
+
+# Site info
+title: Dante Salvador
+subtitle: Software Engineering Blog
+description: "Tech blog covering DDD, Clean Architecture, CQRS, and modern software patterns"
 url: "https://danteturasalvador.github.io"
 
-# GitHub integration
-github_username: DanteTuraSalvador
-github_repo: danteturasalvador.github.io
+# Navigation
+navbar-links:
+  DDD Series:
+    - Value Objects: "/2025/01/01/value-objects-chapter-01"
+    - Strongly Typed IDs: "/2025/01/05/strongly-typed-ids-chapter-01"
+    - Smart Enums: "/2025/01/08/smart-enums-chapter-01"
+    - Result Pattern: "/2025/01/12/result-pattern-chapter-01"
+    - Clean Architecture: "/2025/01/16/clean-architecture-chapter-01"
+    - CQRS: "/2025/01/21/cqrs-chapter-01"
+  Tags: "tags"
+  About: "aboutme"
 
-# Build settings
+# Author
+author:
+  name: Dante Salvador
+
+# Social
+social-network-links:
+  github: DanteTuraSalvador
+
+# Build
 markdown: kramdown
-theme: minima
 highlighter: rouge
 
 # Plugins
@@ -20,13 +36,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Exclusions
-exclude:
-  - .gitignore
-  - Gemfile
-  - Gemfile.lock
+# Custom CSS
+site-css:
+  - "/assets/css/series.css"
 
-# Post settings
+# Post defaults
 defaults:
   - scope:
       path: "_posts"
@@ -34,3 +48,17 @@ defaults:
     values:
       layout: post
       author: Dante Salvador
+      readtime: true
+      comments: false
+      social-share: true
+      before-content:
+        - series-info.html
+      after-content:
+        - series-nav.html
+
+# Exclusions
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - .claude

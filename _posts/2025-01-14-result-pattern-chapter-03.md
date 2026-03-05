@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 3: Implementation - Result and Result<T>"
 date: 2025-01-14
+category: ddd
 tags:
   - ddd
   - result-pattern

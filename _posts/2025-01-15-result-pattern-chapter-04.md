@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 4: Advanced - Chaining, Mapping, and Async Support"
 date: 2025-01-15
+category: ddd
 tags:
   - ddd
   - result-pattern

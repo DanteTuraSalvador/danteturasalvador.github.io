@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 1: Problem - Layered Architecture Issues"
 date: 2025-01-16
+category: ddd
 tags:
   - ddd
   - clean-architecture

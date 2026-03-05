@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 2: Solution - Clean Architecture"
 date: 2025-01-17
+category: ddd
 tags:
   - ddd
   - clean-architecture

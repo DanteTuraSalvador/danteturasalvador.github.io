@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 1: Problem - Primitive Obsession"
 date: 2025-01-01
+category: ddd
 tags:
   - ddd
   - value-objects

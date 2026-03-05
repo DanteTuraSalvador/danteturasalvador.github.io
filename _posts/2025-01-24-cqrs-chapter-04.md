@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 4: Advanced - Event Sourcing"
 date: 2025-01-24
+category: ddd
 tags:
   - ddd
   - cqrs

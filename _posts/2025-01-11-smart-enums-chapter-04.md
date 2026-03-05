@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 4: Advanced - Temporal Validation & Business Rules"
 date: 2025-01-11
+category: ddd
 tags:
   - ddd
   - smart-enums

@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 3: Implementation - CheckIn/CheckOut State Machine"
 date: 2025-01-10
+category: ddd
 tags:
   - ddd
   - smart-enums

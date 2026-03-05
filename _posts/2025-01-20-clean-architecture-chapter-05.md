@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 5: Integration and Deployment"
 date: 2025-01-20
+category: ddd
 tags:
   - ddd
   - clean-architecture

@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 2: Solution - SmartEnum Pattern"
 date: 2025-01-09
+category: ddd
 tags:
   - ddd
   - smart-enums

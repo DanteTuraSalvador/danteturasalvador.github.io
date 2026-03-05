@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 3: Implementation - Commands and Queries"
 date: 2025-01-23
+category: ddd
 tags:
   - ddd
   - cqrs

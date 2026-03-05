@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 2: Solution - CQRS Pattern"
 date: 2025-01-22
+category: ddd
 tags:
   - ddd
   - cqrs

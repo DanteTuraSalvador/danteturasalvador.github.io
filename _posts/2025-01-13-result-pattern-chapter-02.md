@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 2: Solution - Result Pattern"
 date: 2025-01-13
+category: ddd
 tags:
   - ddd
   - result-pattern

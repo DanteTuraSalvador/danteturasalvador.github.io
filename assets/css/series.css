@@ -1,0 +1,67 @@
+/* Series info badge */
+.series-info {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #0085A1;
+}
+
+.series-badge {
+  display: inline-block;
+  background: #0085A1;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.series-meta {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Series navigation */
+.series-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 1.5rem 0;
+  border-top: 2px solid #eee;
+  gap: 1rem;
+}
+
+.series-nav .nav-prev,
+.series-nav .nav-next {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0085A1;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.series-nav .nav-prev:hover,
+.series-nav .nav-next:hover {
+  background: #006d87;
+  color: white !important;
+}
+
+.series-nav .nav-next {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .series-nav {
+    flex-direction: column;
+  }
+  .series-nav .nav-prev,
+  .series-nav .nav-next {
+    text-align: center;
+    margin-left: 0;
+  }
+}

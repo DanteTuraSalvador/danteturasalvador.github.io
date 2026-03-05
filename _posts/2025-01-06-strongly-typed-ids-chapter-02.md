@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 2: Solution - StronglyTypedId Pattern"
 date: 2025-01-06
+category: ddd
 tags:
   - ddd
   - strongly-typed-ids

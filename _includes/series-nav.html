@@ -1,0 +1,10 @@
+{% if page.prev_url or page.next_url %}
+<nav class="series-nav">
+  {% if page.prev_url %}
+  <a href="{{ page.prev_url }}" class="nav-prev">&larr; {{ page.prev_title }}</a>
+  {% endif %}
+  {% if page.next_url %}
+  <a href="{{ page.next_url }}" class="nav-next">{{ page.next_title }} &rarr;</a>
+  {% endif %}
+</nav>
+{% endif %}

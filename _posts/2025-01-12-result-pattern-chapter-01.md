@@ -2,6 +2,7 @@
 layout: post
 title: "Chapter 1: Problem - Exception-Driven Error Handling"
 date: 2025-01-12
+category: ddd
 tags:
   - ddd
   - result-pattern
