@@ -1,13 +1,49 @@
 <div class="subscribe-section" style="text-align: center; padding: 2rem 0; border-top: 2px solid #eee; margin-top: 2rem;">
   <h4 style="margin-bottom: 0.5rem;">Subscribe to my newsletter</h4>
   <p style="color: #666; margin-bottom: 1rem;">Get notified when I publish new tutorials and articles.</p>
-  <!-- Replace YOUR_FORM_URL with your Mailchimp/Buttondown/Substack form action URL -->
-  <form action="YOUR_FORM_URL" method="post" target="_blank" style="display: inline-flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
-    <input type="email" name="email" placeholder="Your email address" required
+  <form id="eo-subscribe-form" style="display: inline-flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
+    <input type="email" id="eo-email" placeholder="Your email address" required
       style="padding: 10px 15px; border: 2px solid #ddd; border-radius: 5px; font-size: 1rem; min-width: 250px;">
-    <button type="submit"
+    <button type="submit" id="eo-submit-btn"
       style="padding: 10px 25px; background: #0085A1; color: white; border: none; border-radius: 5px; font-size: 1rem; font-weight: bold; cursor: pointer;">
       Subscribe
     </button>
   </form>
+  <p id="eo-message" style="margin-top: 0.75rem; display: none;"></p>
 </div>
+<script>
+document.getElementById('eo-subscribe-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var email = document.getElementById('eo-email').value;
+  var btn = document.getElementById('eo-submit-btn');
+  var msg = document.getElementById('eo-message');
+  btn.disabled = true;
+  btn.textContent = 'Subscribing...';
+  fetch('https://emailoctopus.com/api/1.6/lists/bd64e66c-1889-11f1-b831-ebad029d61d7/contacts', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      api_key: 'eo_4a4f0daace15ac084ee2eb36e2b37af7c6c23648c009872271808c85a96a49cc',
+      email_address: email
+    })
+  }).then(function(r) { return r.json(); }).then(function(data) {
+    if (data.id) {
+      msg.style.color = '#28a745';
+      msg.textContent = 'Thanks for subscribing!';
+      document.getElementById('eo-email').value = '';
+    } else {
+      msg.style.color = '#dc3545';
+      msg.textContent = data.error ? data.error.message : 'Something went wrong. Please try again.';
+    }
+    msg.style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = 'Subscribe';
+  }).catch(function() {
+    msg.style.color = '#dc3545';
+    msg.textContent = 'Something went wrong. Please try again.';
+    msg.style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = 'Subscribe';
+  });
+});
+</script>
