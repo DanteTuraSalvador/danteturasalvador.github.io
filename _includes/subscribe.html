@@ -19,31 +19,27 @@ document.getElementById('eo-subscribe-form').addEventListener('submit', function
   var msg = document.getElementById('eo-message');
   btn.disabled = true;
   btn.textContent = 'Subscribing...';
-  fetch('https://emailoctopus.com/api/1.6/lists/bd64e66c-1889-11f1-b831-ebad029d61d7/contacts', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      api_key: 'eo_4a4f0daace15ac084ee2eb36e2b37af7c6c23648c009872271808c85a96a49cc',
-      email_address: email
-    })
-  }).then(function(r) { return r.json(); }).then(function(data) {
-    if (data.id) {
-      msg.style.color = '#28a745';
-      msg.textContent = 'Thanks for subscribing!';
-      document.getElementById('eo-email').value = '';
-    } else {
-      msg.style.color = '#dc3545';
-      msg.textContent = data.error ? data.error.message : 'Something went wrong. Please try again.';
-    }
-    msg.style.display = 'block';
-    btn.disabled = false;
-    btn.textContent = 'Subscribe';
-  }).catch(function() {
+
+  var payload = JSON.stringify({
+    api_key: 'eo_4a4f0daace15ac084ee2eb36e2b37af7c6c23648c009872271808c85a96a49cc',
+    email_address: email
+  });
+
+  var sent = navigator.sendBeacon(
+    'https://emailoctopus.com/api/1.6/lists/bd64e66c-1889-11f1-b831-ebad029d61d7/contacts',
+    new Blob([payload], { type: 'application/json' })
+  );
+
+  if (sent) {
+    msg.style.color = '#28a745';
+    msg.textContent = 'Thanks for subscribing!';
+    document.getElementById('eo-email').value = '';
+  } else {
     msg.style.color = '#dc3545';
     msg.textContent = 'Something went wrong. Please try again.';
-    msg.style.display = 'block';
-    btn.disabled = false;
-    btn.textContent = 'Subscribe';
-  });
+  }
+  msg.style.display = 'block';
+  btn.disabled = false;
+  btn.textContent = 'Subscribe';
 });
 </script>
