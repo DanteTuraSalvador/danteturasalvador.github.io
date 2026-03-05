@@ -9,7 +9,7 @@ description: "Tech blog covering DDD, Clean Architecture, CQRS, and modern softw
 url: "https://danteturasalvador.github.io"
 
 # Avatar (shown in navbar and homepage)
-avatar: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=150&h=150&fit=crop&crop=center"
+avatar: "/assets/img/avatar.jpg"
 
 # Navigation
 navbar-links:
