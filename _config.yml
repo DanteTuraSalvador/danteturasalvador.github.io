@@ -72,6 +72,10 @@ defaults:
     values:
       layout: page
 
+# Random cover image on pages with big-img header
+footer-extra:
+  - random-cover.html
+
 # Remove Beautiful Jekyll branding from footer
 remove-ads: true
 

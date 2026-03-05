@@ -1,0 +1,19 @@
+<script>
+(function() {
+  var images = [
+    "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600&h=500&fit=crop",
+    "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=1600&h=500&fit=crop",
+    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600&h=500&fit=crop",
+    "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1600&h=500&fit=crop",
+    "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1600&h=500&fit=crop",
+    "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1600&h=500&fit=crop",
+    "https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=1600&h=500&fit=crop",
+    "https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1600&h=500&fit=crop"
+  ];
+  var el = document.querySelector('.intro-header.big-img');
+  if (el) {
+    var img = images[Math.floor(Math.random() * images.length)];
+    el.style.backgroundImage = 'url("' + img + '")';
+  }
+})();
+</script>
