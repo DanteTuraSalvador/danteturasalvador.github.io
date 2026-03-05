@@ -74,6 +74,7 @@ defaults:
 
 # Random cover image on pages with big-img header
 footer-extra:
+  - subscribe.html
   - random-cover.html
 
 # Remove Beautiful Jekyll branding from footer
