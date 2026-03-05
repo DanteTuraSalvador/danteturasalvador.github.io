@@ -11,7 +11,7 @@ chapter: 4
 prerequisites: "Chapter 3"
 estimated_time: "25 minutes"
 prev_title: "Chapter 3: Implementation - Commands and Queries"
-prev: "/2025/01/23/cqrs-chapter-03.html"
+prev_url: "/2025/01/23/cqrs-chapter-03.html"
 ---
 
 # Chapter 4: Advanced - Event Sourcing
@@ -71,42 +71,38 @@ Event Sourcing is a pattern that:
 
 ```
 ┌─────────────────────────────────────┐
-│     Command Side               │
-├───────────────┬──────────────────┤
-│                │   Command     │
-└───────────────┴──────────────────┘
-                ▼
+│          Command Side               │
+├──────────────────┬──────────────────┤
+│     Commands     │    Validation    │
+└────────┬─────────┴──────────────────┘
+         │
+         ▼
 ┌─────────────────────────────────────┐
-│        Event Store                │
-├───────────────┬──────────────────┤
-│   │  Commands  │  Queries    │
-│   │  Events    │  Snapshots  │
-│   └───────────┴──────────┘
-                ▼
+│           Event Store               │
+├──────────────────┬──────────────────┤
+│    Commands      │    Queries       │
+│    Events        │    Snapshots     │
+└────────┬─────────┴────────┬─────────┘
+         │                  │
+         ▼                  ▼
+┌──────────────────┐ ┌────────────────┐
+│   Write Model    │ │   Read Model   │
+│  (Projections)   │ │    (Views)     │
+└────────┬─────────┘ └────────┬───────┘
+         │                    │
+         ▼                    ▼
 ┌─────────────────────────────────────┐
-│      Write Model (Projections)      │
-└──────────────────────────────────────┘
-                ▼
-┌─────────────────────────────────────┐
-│     Read Model (Views)          │
-├───────────────┬──────────────────┤
-│   │  Queries    │  Projections │
-│   │  Event Replay │  Snapshots   │
-│   └───────────┴──────────┘
-                ▼
-┌─────────────────────────────────────┐
-│     Event Stream                 │
-│   ├─ Domain Events
-│   ├─ Integration Events
-│   └─ System Events
-└──────────────────────────────────────┘
+│          Event Stream               │
+│   ├─ Domain Events                  │
+│   ├─ Integration Events             │
+│   └─ System Events                  │
+└─────────────────────────────────────┘
 ```
 
 **Data Flow:**
 - Commands → Event Store → Write Model (Append only)
 - Queries → Event Store → Read Model (Projections)
 - Event Stream → Read Model
-```
 
 ---
 
@@ -128,10 +124,7 @@ public record CustomerCreatedEvent : DomainEvent
     public CustomerId CustomerId { get; }
     public string Name { get; }
     public Email Email { get; }
-    public DateTime CreatedAt { get; } = OccurredAt => DateTime.UtcNow;
-}
-
-    public CustomerId CustomerId => CustomerId;
+    public DateTime CreatedAt { get; } = DateTime.UtcNow;
 }
 
 public record CustomerEmailChangedEvent : DomainEvent
@@ -139,9 +132,6 @@ public record CustomerEmailChangedEvent : DomainEvent
     public CustomerId CustomerId { get; }
     public Email OldEmail { get; }
     public Email NewEmail { get; }
-    public DateTime OccurredAt { get; } = OccurredAt => DateTime.UtcNow;
-
-    public CustomerId CustomerId => CustomerId;
 }
 
 public record OrderCreatedEvent : DomainEvent
@@ -149,9 +139,6 @@ public record OrderCreatedEvent : DomainEvent
     public OrderId OrderId { get; }
     public CustomerId CustomerId { get; }
     public Money TotalAmount { get; }
-    public DateTime OccurredAt { get; } = OccurredAt => DateTime.UtcNow;
-
-    public OrderId OrderId => OrderId;
 }
 ```
 
@@ -272,7 +259,6 @@ public class InMemoryEventStore : IEventStore
 
         return allEvents.Max(e => e.Version);
     }
-}
 
     private record EventWrapper
     {
@@ -280,7 +266,7 @@ public class InMemoryEventStore : IEventStore
         public Guid EventId { get; }
         public int Version { get; }
         public object Event { get; }
-    public DateTime OccurredAt { get; }
+        public DateTime OccurredAt { get; }
     }
 }
 ```
@@ -294,24 +280,20 @@ public class InMemoryEventStore : IEventStore
 ```csharp
 public class OrderReadModel
 {
-    public Guid Id { get; }
-    public CustomerId CustomerId { get; }
-    public CustomerName { get; }
-    public Money TotalAmount { get; }
-    public string Status { get; }
-    public DateTime CreatedAt { get; }
-    public DateTime? ShippedAt { get; }
-    public DateTime? DeliveredAt { get; }
+    public Guid Id { get; set; }
+    public CustomerId CustomerId { get; set; }
+    public string CustomerName { get; set; }
+    public Money TotalAmount { get; set; }
+    public string Status { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public DateTime? PaidAt { get; set; }
+    public DateTime? ShippedAt { get; set; }
+    public DateTime? DeliveredAt { get; set; }
+    public DateTime? UpdatedAt { get; set; }
+    public List<OrderItemReadModel> Items { get; } = new();
 
     // Computed from events
     public int TotalItems => Items.Sum(i => i.Quantity);
-}
-}
-
-public class OrderReadModel
-{
-    public Guid Id { get; }
-    public List<OrderItemReadModel> Items { get; } = new();
 }
 ```
 
@@ -322,49 +304,43 @@ public class OrderProjection
 {
     public static OrderReadModel Project(IEnumerable<DomainEvent> events)
     {
-        var orderEvents = events.Where(e => e is OrderCreatedEvent 
+        var orderEvents = events.Where(e => e is OrderCreatedEvent
                                       || e is OrderPaidEvent
                                       || e is OrderShippedEvent
                                       || e is OrderDeliveredEvent);
 
-        var grouped = orderEvents
-            .GroupBy(e => e.AggregateId)
-            .OrderBy(e => e.OccurredAt);
-
-        foreach (var group in grouped)
+        var firstEvent = orderEvents.First();
+        var order = new OrderReadModel
         {
-            var firstEvent = group.First();
-            var order = new OrderReadModel
-            {
-                Id = group.Key,
-                CreatedAt = firstEvent.OccurredAt,
-                UpdatedAt = group.Last().OccurredAt
-            };
+            Id = firstEvent.AggregateId,
+            CreatedAt = firstEvent.OccurredAt,
+            UpdatedAt = orderEvents.Last().OccurredAt
+        };
 
-            // Apply events in order
-            foreach (var e in group.Skip(1))
+        // Apply events in order
+        foreach (var e in orderEvents.Skip(1))
+        {
+            switch (e)
             {
-                switch (e)
-                {
-                    OrderPaidEvent paid => order.PaidAt = e.OccurredAt;
+                case OrderPaidEvent paid:
+                    order.PaidAt = e.OccurredAt;
                     order.TotalAmount = order.TotalAmount + paid.Amount;
-                    order.Status = OrderStatus.Paid;
+                    order.Status = OrderStatus.Paid.ToString();
                     break;
 
-                    OrderShippedEvent shipped => order.ShippedAt = e.OccurredAt;
-                    order.Status = OrderStatus.Shipped;
+                case OrderShippedEvent shipped:
+                    order.ShippedAt = e.OccurredAt;
+                    order.Status = OrderStatus.Shipped.ToString();
                     break;
 
-                    OrderDeliveredEvent delivered => order.DeliveredAt = e.OccurredAt;
-                    order.Status = OrderStatus.Delivered;
+                case OrderDeliveredEvent delivered:
+                    order.DeliveredAt = e.OccurredAt;
+                    order.Status = OrderStatus.Delivered.ToString();
                     break;
-                };
             }
-
-            return order;
         }
 
-        return orderModels.ToList();
+        return order;
     }
 }
 ```
@@ -487,7 +463,6 @@ public class Snapshot<T>
     public string SnapshotData { get; }
     public DateTime CreatedAt { get; }
 }
-}
 ```
 
 ### Creating Snapshots
@@ -602,9 +577,8 @@ public class OrderCommandHandler : ICommandHandler<CreateOrderCommand, Result<Or
 
         return Result<OrderId>.Success(orderId);
     }
-}
 
-    private async Task CheckForDuplicateOrder(CreateOrderCommand command)
+    private async Task<Result<OrderId>> CheckForDuplicateOrder(CreateOrderCommand command)
     {
         var recentEvents = await _eventStore.GetEventsAsync<DomainEvent>(
             command.CustomerId, 0, int.MaxValue);
@@ -620,6 +594,8 @@ public class OrderCommandHandler : ICommandHandler<CreateOrderCommand, Result<Or
 
         if (hasRecentOrder)
             return Result<OrderId>.Failure("Duplicate recent order");
+
+        return Result<OrderId>.Success(default);
     }
 }
 ```
@@ -646,4 +622,3 @@ public class OrderCommandHandler : ICommandHandler<CreateOrderCommand, Result<Or
 - [Greg Young: CQRS + Event Sourcing](https://www.youtube.com/watch?v=8hkXbE1Rg)
 - [Microsoft: Event Sourcing with EF Core](https://docs.microsoft.com/en-us/ef/core/modeling/draft/design/event-sourcing)
 
-{% include tutorial-nav.html %}

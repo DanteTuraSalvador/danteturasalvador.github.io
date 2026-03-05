@@ -11,9 +11,9 @@ chapter: 1
 prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Result Pattern Series"
-prev: "/2025/01/15/result-pattern-chapter-04.html"
+prev_url: "/2025/01/15/result-pattern-chapter-04.html"
 next_title: "Chapter 2: Solution - Clean Architecture"
-next: "/2025/01/17/clean-architecture-chapter-02.html"
+next_url: "/2025/01/17/clean-architecture-chapter-02.html"
 ---
 
 # Chapter 1: Problem - Layered Architecture Issues
@@ -306,4 +306,3 @@ In [Chapter 2](/2025/01/17/clean-architecture-chapter-02.html), we'll explore th
 - [Robert C. Martin: Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [Microsoft: Clean Architecture with ASP.NET Core](https://docs.microsoft.com/en-us/dotnet/standard/architecture/clean-architecture)
 
-{% include tutorial-nav.html %}

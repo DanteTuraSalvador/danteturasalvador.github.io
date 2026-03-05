@@ -11,9 +11,9 @@ chapter: 1
 prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Strongly Typed IDs Series"
-prev: "/2025/01/07/strongly-typed-ids-chapter-03.html"
+prev_url: "/2025/01/07/strongly-typed-ids-chapter-03.html"
 next_title: "Chapter 2: Solution - SmartEnum Pattern"
-next: "/2025/01/09/smart-enums-chapter-02.html"
+next_url: "/2025/01/09/smart-enums-chapter-02.html"
 ---
 
 # Chapter 1: Problem - State Management
@@ -188,4 +188,3 @@ In [Chapter 2](/2025/01/09/smart-enums-chapter-02.html), we'll explore the **Sma
 - [Source Code: TestNest.SmartEnums](https://github.com/DanteTuraSalvador/TestNest.SmartEnums)
 - [Wikipedia: State Pattern](https://en.wikipedia.org/wiki/State_pattern)
 
-{% include tutorial-nav.html %}

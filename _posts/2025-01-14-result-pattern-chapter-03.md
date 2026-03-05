@@ -11,9 +11,9 @@ chapter: 3
 prerequisites: "Chapter 2"
 estimated_time: "30 minutes"
 prev_title: "Chapter 2: Solution - Result Pattern"
-prev: "/2025/01/13/result-pattern-chapter-02.html"
+prev_url: "/2025/01/13/result-pattern-chapter-02.html"
 next_title: "Chapter 4: Advanced - Chaining, Mapping, and Async Support"
-next: "/2025/01/15/result-pattern-chapter-04.html"
+next_url: "/2025/01/15/result-pattern-chapter-04.html"
 ---
 
 # Chapter 3: Implementation - Result and Result<T>
@@ -597,4 +597,3 @@ You've implemented a complete Result pattern! In [Chapter 4](/2025/01/15/result-
 - [Tests: ResultTests.cs](https://github.com/DanteTuraSalvador/TestNest.ResultPattern/blob/main/TestNest.ResultPattern.Tests/ResultTests.cs)
 - [C# Pattern Matching: Match expressions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/functional/pattern-matching)
 
-{% include tutorial-nav.html %}

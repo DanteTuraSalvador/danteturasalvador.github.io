@@ -11,9 +11,9 @@ chapter: 1
 prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Value Objects Series"
-prev: "/2025/01/04/value-objects-chapter-04.html"
+prev_url: "/2025/01/04/value-objects-chapter-04.html"
 next_title: "Chapter 2: Solution - StronglyTypedId Pattern"
-next: "/2025/01/06/strongly-typed-ids-chapter-02.html"
+next_url: "/2025/01/06/strongly-typed-ids-chapter-02.html"
 ---
 
 # Chapter 1: Problem - ID Type Confusion
@@ -160,4 +160,3 @@ Continue your DDD journey with:
 - [Clean Architecture](#) - Architectural patterns
 - [CQRS](#) - Command Query Separation
 
-{% include tutorial-nav.html %}

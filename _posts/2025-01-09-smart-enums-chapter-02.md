@@ -11,9 +11,9 @@ chapter: 2
 prerequisites: "Chapter 1"
 estimated_time: "20 minutes"
 prev_title: "Chapter 1: Problem - State Management"
-prev: "/2025/01/08/smart-enums-chapter-01.html"
+prev_url: "/2025/01/08/smart-enums-chapter-01.html"
 next_title: "Chapter 3: Implementation - CheckIn/CheckOut State Machine"
-next: "/2025/01/10/smart-enums-chapter-03.html"
+next_url: "/2025/01/10/smart-enums-chapter-03.html"
 ---
 
 # Chapter 2: Solution - SmartEnum Pattern
@@ -368,4 +368,3 @@ public class Visit
 - [Source Code: TestNest.SmartEnums](https://github.com/DanteTuraSalvador/TestNest.SmartEnums)
 - [Martin Fowler: State Pattern](https://martinfowler.com/eaaCatalog/state.html)
 
-{% include tutorial-nav.html %}

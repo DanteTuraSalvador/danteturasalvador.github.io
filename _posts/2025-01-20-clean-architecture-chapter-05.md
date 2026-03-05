@@ -11,7 +11,7 @@ chapter: 5
 prerequisites: "Chapter 4"
 estimated_time: "25 minutes"
 prev_title: "Chapter 4: Domain Layer Implementation"
-prev: "/2025/01/19/clean-architecture-chapter-04.html"
+prev_url: "/2025/01/19/clean-architecture-chapter-04.html"
 ---
 
 # Chapter 5: Integration and Deployment
@@ -655,4 +655,3 @@ services.AddAuthorization(options =>
 - [MediatR: Mediator pattern implementation](https://github.com/jbogard/MediatR)
 - [OWASP API Security: Secure APIs](https://github.com/OWASP/ASP.NET)
 
-{% include tutorial-nav.html %}

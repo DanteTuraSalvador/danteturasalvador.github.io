@@ -11,9 +11,9 @@ chapter: 3
 prerequisites: "Chapter 2"
 estimated_time: "30 minutes"
 prev_title: "Chapter 2: Solution - CQRS Pattern"
-prev: "/2025/01/22/cqrs-chapter-02.html"
+prev_url: "/2025/01/22/cqrs-chapter-02.html"
 next_title: "Chapter 4: Advanced - Event Sourcing"
-next: "/2025/01/24/cqrs-chapter-04.html"
+next_url: "/2025/01/24/cqrs-chapter-04.html"
 ---
 
 # Chapter 3: Implementation - Commands and Queries
@@ -48,7 +48,6 @@ public class Order
     public DateTime? ShippedAt { get; set; }
     public DateTime? DeliveredAt { get; set; }
     public List<OrderItem> Items { get; } = new();
-}
 
     public void AddItem(OrderItem item)
     {
@@ -326,7 +325,6 @@ public class CreateOrderCommandHandlerTests
 
         var result = await handler.Handle(command, CancellationToken.None);
 
-        Assert.IsTrue(result.IsSuccess);
         Assert.True(result.IsSuccess);
     }
 
@@ -409,4 +407,3 @@ public class GetOrdersByCustomerQueryHandlerTests
 - [MediatR: Mediator for CQRS](https://github.com/jbogard/MediatR)
 - [Jimmy Bogard: CQRS pattern](https://www.jimmybogard.com/tags/cqrs/)
 
-{% include tutorial-nav.html %}

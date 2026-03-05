@@ -11,9 +11,9 @@ chapter: 2
 prerequisites: "Chapter 1"
 estimated_time: "20 minutes"
 prev_title: "Chapter 1: Problem - CRUD Complexity"
-prev: "/2025/01/21/cqrs-chapter-01.html"
+prev_url: "/2025/01/21/cqrs-chapter-01.html"
 next_title: "Chapter 3: Implementation - Commands and Queries"
-next: "/2025/01/23/cqrs-chapter-03.html"
+next_url: "/2025/01/23/cqrs-chapter-03.html"
 ---
 
 # Chapter 2: Solution - CQRS Pattern
@@ -113,7 +113,7 @@ public record PlaceOrderCommand
 public record CancelOrderCommand
 {
     public OrderId OrderId { get; init; }
-    public string Reason { get; init; init; }
+    public string Reason { get; init; }
 }
 
 public record ProcessPaymentCommand
@@ -165,7 +165,7 @@ public record SearchOrdersQuery
 {
     public string? SearchTerm { get; init; }
     public OrderStatus? Status { get; init; }
-    public Page { get; init; }
+    public int Page { get; init; }
     public int PageSize { get; init; }
 }
 
@@ -183,33 +183,34 @@ public record GetDashboardStatsQuery
 
 ```
 ┌─────────────────────────────────────┐
-│   Presentation Layer (API)         │
-├──────────────────┬────────────────┤
-│                │                │
-                ▼                │
-┌─────────────────────────────┐    │
-│     Application Layer          │    │
-│   ┌────────┬────────┐   │   │
-│   │Commands│Queries│   │   │
-│   └────────┴────────┘   │   │
-└───────────────┬────────────┘
-                │
-                ▼
+│       Presentation Layer (API)      │
+├──────────┬──────────────────────────┤
+│ Commands │        Queries           │
+└────┬─────┴──────────┬───────────────┘
+     │                │
+     ▼                ▼
 ┌─────────────────────────────────────┐
-│       Domain Layer (Core)           │
-├──────────────────────────────────────┤
-│   ┌────────┬──────────┐   │
-│   │Commands │ Queries │   │
-│   └────────┴──────────┘   │
-└──────────────────────────────────────┘
-                │
-                ▼
+│        Application Layer            │
+├──────────┬──────────────────────────┤
+│ Command  │       Query              │
+│ Handlers │       Handlers           │
+└────┬─────┴──────────┬───────────────┘
+     │                │
+     ▼                ▼
 ┌─────────────────────────────────────┐
-│      Infrastructure Layer            │
-│   ┌────────┬──────────┐   │
-│   │Commands│ Queries │   │   │
-│   └────────┴──────────┘   │
-└──────────────────────────────────────┘
+│        Domain Layer (Core)          │
+├──────────┬──────────────────────────┤
+│ Entities │   Value Objects          │
+│ Events   │   Specifications        │
+└────┬─────┴──────────┬───────────────┘
+     │                │
+     ▼                ▼
+┌─────────────────────────────────────┐
+│       Infrastructure Layer          │
+├──────────┬──────────────────────────┤
+│  Write   │       Read               │
+│  Repos   │       Repos + Cache      │
+└──────────┴──────────────────────────┘
 ```
 
 **Data Flow:**
@@ -218,7 +219,6 @@ public record GetDashboardStatsQuery
 - Domain → Infrastructure Implementation
 - Commands → Write to database
 - Queries → Read from database (can be cached)
-```
 
 ---
 
@@ -464,4 +464,3 @@ public class PaymentCommandHandler : ICommandHandler<ProcessPaymentCommand, Resu
 - [Greg Young: CQRS and Event Sourcing](https://www.youtube.com/watch?v=8hkXbE1Rg)
 - [Microsoft: CQRS](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)
 
-{% include tutorial-nav.html %}

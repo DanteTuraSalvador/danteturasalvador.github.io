@@ -11,9 +11,9 @@ chapter: 3
 prerequisites: "Chapter 2"
 estimated_time: "30 minutes"
 prev_title: "Chapter 2: Solution - Clean Architecture"
-prev: "/2025/01/17/clean-architecture-chapter-02.html"
+prev_url: "/2025/01/17/clean-architecture-chapter-02.html"
 next_title: "Chapter 4: Domain Layer Implementation"
-next: "/2025/01/19/clean-architecture-chapter-04.html"
+next_url: "/2025/01/19/clean-architecture-chapter-04.html"
 ---
 
 # Chapter 3: Implementation - Project Structure
@@ -583,4 +583,3 @@ public class CustomerServiceTests
 - [Microsoft: Minimal APIs](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api)
 - [MediatR: Simple mediator pattern](https://github.com/jbogard/MediatR)
 
-{% include tutorial-nav.html %}

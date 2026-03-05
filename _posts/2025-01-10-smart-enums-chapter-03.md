@@ -11,9 +11,9 @@ chapter: 3
 prerequisites: "Chapter 2"
 estimated_time: "30 minutes"
 prev_title: "Chapter 2: Solution - SmartEnum Pattern"
-prev: "/2025/01/09/smart-enums-chapter-02.html"
+prev_url: "/2025/01/09/smart-enums-chapter-02.html"
 next_title: "Chapter 4: Advanced - Temporal Validation & Business Rules"
-next: "/2025/01/11/smart-enums-chapter-04.html"
+next_url: "/2025/01/11/smart-enums-chapter-04.html"
 ---
 
 # Chapter 3: Implementation - CheckIn/CheckOut State Machine
@@ -473,4 +473,3 @@ You've implemented your first SmartEnum with state transitions! In [Chapter 4](/
 - [Complete Source Code: TestNest.SmartEnums](https://github.com/DanteTuraSalvador/TestNest.SmartEnums)
 - [Tests: CheckInOutTests.cs](https://github.com/DanteTuraSalvador/TestNest.SmartEnums/blob/main/TestNest.SmartEnums.Tests/CheckInOutTests.cs)
 
-{% include tutorial-nav.html %}

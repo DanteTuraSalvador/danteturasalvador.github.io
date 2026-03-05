@@ -11,9 +11,9 @@ chapter: 1
 prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Smart Enums Series"
-prev: "/2025/01/11/smart-enums-chapter-04.html"
+prev_url: "/2025/01/11/smart-enums-chapter-04.html"
 next_title: "Chapter 2: Solution - Result Pattern"
-next: "/2025/01/13/result-pattern-chapter-02.html"
+next_url: "/2025/01/13/result-pattern-chapter-02.html"
 ---
 
 # Chapter 1: Problem - Exception-Driven Error Handling
@@ -291,4 +291,3 @@ In [Chapter 2](/2025/01/13/result-pattern-chapter-02.html), we'll explore the **
 - [Source Code: TestNest.ResultPattern](https://github.com/DanteTuraSalvador/TestNest.ResultPattern)
 - [Wikipedia: Result Type](https://en.wikipedia.org/wiki/Result_type)
 
-{% include tutorial-nav.html %}

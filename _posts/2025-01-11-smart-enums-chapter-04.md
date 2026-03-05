@@ -11,7 +11,7 @@ chapter: 4
 prerequisites: "Chapter 3"
 estimated_time: "25 minutes"
 prev_title: "Chapter 3: Implementation - CheckIn/CheckOut State Machine"
-prev: "/2025/01/10/smart-enums-chapter-03.html"
+prev_url: "/2025/01/10/smart-enums-chapter-03.html"
 ---
 
 # Chapter 4: Advanced - Temporal Validation & Business Rules
@@ -406,4 +406,3 @@ Continue your DDD journey with:
 - [Clean Architecture](#) - Architectural patterns
 - [CQRS](#) - Command Query Separation
 
-{% include tutorial-nav.html %}

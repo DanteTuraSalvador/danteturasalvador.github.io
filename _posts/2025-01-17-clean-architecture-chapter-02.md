@@ -11,9 +11,9 @@ chapter: 2
 prerequisites: "Chapter 1"
 estimated_time: "20 minutes"
 prev_title: "Chapter 1: Problem - Layered Architecture Issues"
-prev: "/2025/01/16/clean-architecture-chapter-01.html"
+prev_url: "/2025/01/16/clean-architecture-chapter-01.html"
 next_title: "Chapter 3: Implementation - Project Structure"
-next: "/2025/01/18/clean-architecture-chapter-03.html"
+next_url: "/2025/01/18/clean-architecture-chapter-03.html"
 ---
 
 # Chapter 2: Solution - Clean Architecture
@@ -415,4 +415,3 @@ Project.Solution/
 - [Jason Taylor: Clean Architecture](https://jasontaylor.dev/2012/08/13/the-clean-architecture.html)
 - [Microsoft: Architecture Patterns](https://docs.microsoft.com/en-us/dotnet/standard/architecture/)
 
-{% include tutorial-nav.html %}

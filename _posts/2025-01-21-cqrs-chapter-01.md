@@ -11,9 +11,9 @@ chapter: 1
 prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Clean Architecture Series"
-prev: "/2025/01/20/clean-architecture-chapter-05.html"
+prev_url: "/2025/01/20/clean-architecture-chapter-05.html"
 next_title: "Chapter 2: Solution - CQRS Pattern"
-next: "/2025/01/22/cqrs-chapter-02.html"
+next_url: "/2025/01/22/cqrs-chapter-02.html"
 ---
 
 # Chapter 1: Problem - CRUD Complexity
@@ -110,8 +110,10 @@ public class OrderController : ControllerBase
 
         // Problem: Update with read then write pattern
         if (request.Status == "Shipped")
-        order.NotifyCustomer();
+        {
+            order.NotifyCustomer();
             order.GenerateShippingLabel();
+        }
             
         if (order.TotalAmount > customer.CreditLimit)
             return BadRequest("Insufficient credit");
@@ -123,7 +125,7 @@ public class OrderController : ControllerBase
 
     // DELETE: Read then delete
     [HttpDelete("{id:guid}")]
-    public async Task<IActionResult> DomainEntities(Guid id)
+    public async Task<IActionResult> DeleteOrder(Guid id)
     {
         var order = await _repository.GetByIdAsync(id);
         
@@ -404,4 +406,3 @@ In [Chapter 2](/2025/01/22/cqrs-chapter-02.html), we'll explore the **CQRS patte
 - [Martin Fowler: CQRS](https://martinfowler.com/bliki/CQRS.html)
 - [Microsoft: CQRS pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs/)
 
-{% include tutorial-nav.html %}

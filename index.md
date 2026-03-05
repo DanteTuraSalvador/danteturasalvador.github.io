@@ -40,7 +40,7 @@ Learn DDD with real C# implementations and production-ready code.
 - Layered architecture
 - [View Code](https://github.com/DanteTuraSalvador/MinimalAPICleanArchitecture)
 
-**[CQRS](#)**
+**[CQRS](/2025/01/21/cqrs-chapter-01.html)**
 - 4 chapters, 90 minutes
 - Command Query Separation
 - [View Code](https://github.com/DanteTuraSalvador/CQRSCleanApi)

@@ -11,9 +11,9 @@ chapter: 2
 prerequisites: "Chapter 1"
 estimated_time: "20 minutes"
 prev_title: "Chapter 1: Problem - Exception-Driven Error Handling"
-prev: "/2025/01/12/result-pattern-chapter-01.html"
+prev_url: "/2025/01/12/result-pattern-chapter-01.html"
 next_title: "Chapter 3: Implementation - Result and Result<T>"
-next: "/2025/01/14/result-pattern-chapter-03.html"
+next_url: "/2025/01/14/result-pattern-chapter-03.html"
 ---
 
 # Chapter 2: Solution - Result Pattern
@@ -387,4 +387,3 @@ public class CustomerService
 - [Source Code: TestNest.ResultPattern](https://github.com/DanteTuraSalvador/TestNest.ResultPattern)
 - [Language Ext: Result Type](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/nullable-value-types)
 
-{% include tutorial-nav.html %}
