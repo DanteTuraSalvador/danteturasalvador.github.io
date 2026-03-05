@@ -3,9 +3,13 @@ remote_theme: daattali/beautiful-jekyll
 
 # Site info
 title: Dante Salvador
-subtitle: Software Engineering Blog
+title-separator: "|"
+subtitle: "Software Engineer / DDD Enthusiast / Open-Source Developer"
 description: "Tech blog covering DDD, Clean Architecture, CQRS, and modern software patterns"
 url: "https://danteturasalvador.github.io"
+
+# Avatar (shown in navbar and homepage)
+avatar: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=150&h=150&fit=crop&crop=center"
 
 # Navigation
 navbar-links:
@@ -26,6 +30,9 @@ author: Dante Salvador
 social-network-links:
   github: DanteTuraSalvador
 
+# Homepage header
+title-on-page: true
+
 # Build
 markdown: kramdown
 highlighter: rouge
@@ -40,6 +47,9 @@ plugins:
 site-css:
   - "/assets/css/series.css"
 
+# Number of posts per page
+paginate: 10
+
 # Post defaults
 defaults:
   - scope:
@@ -51,10 +61,15 @@ defaults:
       readtime: true
       comments: false
       social-share: true
+      thumbnail-img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop"
       before-content:
         - series-info.html
       after-content:
         - series-nav.html
+  - scope:
+      path: ""
+    values:
+      layout: page
 
 # Remove Beautiful Jekyll branding from footer
 remove-ads: true

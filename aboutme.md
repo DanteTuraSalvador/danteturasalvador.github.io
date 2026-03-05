@@ -2,6 +2,7 @@
 layout: page
 title: About Me
 subtitle: Software Engineer
+cover-img: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=1600&h=500&fit=crop"
 ---
 
 I'm Dante Salvador, a software engineer focused on building clean, maintainable, and production-ready applications.
