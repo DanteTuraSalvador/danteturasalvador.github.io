@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 2: Solution - Value Object Pattern"
+title: "Part 2: Solution - Value Object Pattern"
 date: 2025-01-02
 category: ddd
 tags:
@@ -9,15 +9,15 @@ tags:
   - beginner
 series: value-objects
 chapter: 2
-prerequisites: "Chapter 1"
+prerequisites: "Part 1"
 estimated_time: "20 minutes"
-prev_title: "Chapter 1: Problem - Primitive Obsession"
+prev_title: "Part 1: Problem - Primitive Obsession"
 prev_url: "/ddd/2025/01/01/value-objects-chapter-01.html"
-next_title: "Chapter 3: Implementation - Your First Value Object"
+next_title: "Part 3: Implementation - Your First Value Object"
 next_url: "/ddd/2025/01/03/value-objects-chapter-03.html"
 ---
 
-# Chapter 2: Solution - Value Object Pattern
+# Part 2: Solution - Value Object Pattern
 
 ## Learning Objectives
 
@@ -208,7 +208,7 @@ public void UpdateEmail(Email newEmail)
 - Value Objects are immutable, value-based objects
 - They provide type safety and self-validation
 - Use when identity doesn't matter, only values do
-- Next: Implement your first Value Object in Chapter 3
+- Next: Implement your first Value Object in Part 3
 
 ---
 

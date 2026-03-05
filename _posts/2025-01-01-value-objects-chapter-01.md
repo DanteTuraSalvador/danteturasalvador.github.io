@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 1: Problem - Primitive Obsession"
+title: "Part 1: Problem - Primitive Obsession"
 date: 2025-01-01
 category: ddd
 tags:
@@ -13,11 +13,11 @@ prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Homepage"
 prev_url: "/"
-next_title: "Chapter 2: Solution - Value Object Pattern"
+next_title: "Part 2: Solution - Value Object Pattern"
 next_url: "/ddd/2025/01/02/value-objects-chapter-02.html"
 ---
 
-# Chapter 1: Problem - Primitive Obsession
+# Part 1: Problem - Primitive Obsession
 
 ## Learning Objectives
 
@@ -103,7 +103,7 @@ We need a way to:
 
 ## The Solution: Value Objects
 
-In [Chapter 2](/2025/01/02/value-objects-chapter-02.html), we'll explore the **Value Object pattern** and how it solves all these problems.
+In [Part 2](/2025/01/02/value-objects-chapter-02.html), we'll explore the **Value Object pattern** and how it solves all these problems.
 
 ---
 
@@ -112,7 +112,7 @@ In [Chapter 2](/2025/01/02/value-objects-chapter-02.html), we'll explore the **V
 - Primitive obsession uses basic types for domain concepts
 - It causes validation, type safety, and maintainability issues
 - The solution is Value Object pattern
-- Next: Learn about Value Objects in Chapter 2
+- Next: Learn about Value Objects in Part 2
 
 ---
 

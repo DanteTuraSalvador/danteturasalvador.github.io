@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 1: Problem - State Management"
+title: "Part 1: Problem - State Management"
 date: 2025-01-08
 category: ddd
 tags:
@@ -13,11 +13,11 @@ prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Strongly Typed IDs Series"
 prev_url: "/ddd/2025/01/07/strongly-typed-ids-chapter-03.html"
-next_title: "Chapter 2: Solution - SmartEnum Pattern"
+next_title: "Part 2: Solution - SmartEnum Pattern"
 next_url: "/ddd/2025/01/09/smart-enums-chapter-02.html"
 ---
 
-# Chapter 1: Problem - State Management
+# Part 1: Problem - State Management
 
 ## Learning Objectives
 
@@ -169,7 +169,7 @@ We need a way to:
 
 ## The Solution: Smart Enums
 
-In [Chapter 2](/2025/01/09/smart-enums-chapter-02.html), we'll explore the **SmartEnum pattern** and how it solves all these state management problems.
+In [Part 2](/2025/01/09/smart-enums-chapter-02.html), we'll explore the **SmartEnum pattern** and how it solves all these state management problems.
 
 ---
 
@@ -180,7 +180,7 @@ In [Chapter 2](/2025/01/09/smart-enums-chapter-02.html), we'll explore the **Sma
 - They don't enforce business rules
 - Scattered validation leads to bugs
 - The solution is SmartEnum pattern
-- Next: Learn about SmartEnum in Chapter 2
+- Next: Learn about SmartEnum in Part 2
 
 ---
 

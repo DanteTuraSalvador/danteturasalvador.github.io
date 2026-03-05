@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 4: Domain Layer Implementation"
+title: "Part 4: Domain Layer Implementation"
 date: 2025-01-19
 category: ddd
 tags:
@@ -9,15 +9,15 @@ tags:
   - implementation
 series: clean-architecture
 chapter: 4
-prerequisites: "Chapter 3"
+prerequisites: "Part 3"
 estimated_time: "25 minutes"
-prev_title: "Chapter 3: Implementation - Project Structure"
+prev_title: "Part 3: Implementation - Project Structure"
 prev_url: "/ddd/2025/01/18/clean-architecture-chapter-03.html"
-next_title: "Chapter 5: Integration and Deployment"
+next_title: "Part 5: Integration and Deployment"
 next_url: "/ddd/2025/01/20/clean-architecture-chapter-05.html"
 ---
 
-# Chapter 4: Domain Layer Implementation
+# Part 4: Domain Layer Implementation
 
 ## Learning Objectives
 
@@ -411,7 +411,7 @@ public class CustomerTests
 - Events for decoupled communication
 - Specifications for reusable rules
 - Test without infrastructure dependencies
-- Next: Integration and deployment in Chapter 5
+- Next: Integration and deployment in Part 5
 
 ---
 

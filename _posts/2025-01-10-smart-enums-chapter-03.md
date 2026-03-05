@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 3: Implementation - CheckIn/CheckOut State Machine"
+title: "Part 3: Implementation - CheckIn/CheckOut State Machine"
 date: 2025-01-10
 category: ddd
 tags:
@@ -9,15 +9,15 @@ tags:
   - implementation
 series: smart-enums
 chapter: 3
-prerequisites: "Chapter 2"
+prerequisites: "Part 2"
 estimated_time: "30 minutes"
-prev_title: "Chapter 2: Solution - SmartEnum Pattern"
+prev_title: "Part 2: Solution - SmartEnum Pattern"
 prev_url: "/ddd/2025/01/09/smart-enums-chapter-02.html"
-next_title: "Chapter 4: Advanced - Temporal Validation & Business Rules"
+next_title: "Part 4: Advanced - Temporal Validation & Business Rules"
 next_url: "/ddd/2025/01/11/smart-enums-chapter-04.html"
 ---
 
-# Chapter 3: Implementation - CheckIn/CheckOut State Machine
+# Part 3: Implementation - CheckIn/CheckOut State Machine
 
 ## Learning Objectives
 
@@ -454,7 +454,7 @@ var checkIn = new CheckedInCheckInOut(time, visitId);  // Bypasses validation
 
 ## Next Steps
 
-You've implemented your first SmartEnum with state transitions! In [Chapter 4](/2025/01/11/smart-enums-chapter-04.html), we'll explore advanced concepts like temporal validation, business rules, and state machine performance.
+You've implemented your first SmartEnum with state transitions! In [Part 4](/2025/01/11/smart-enums-chapter-04.html), we'll explore advanced concepts like temporal validation, business rules, and state machine performance.
 
 ---
 
@@ -465,7 +465,7 @@ You've implemented your first SmartEnum with state transitions! In [Chapter 4](/
 - Validate transitions with CanTransitionFrom
 - Encapsulate state-specific behavior
 - Test all transition paths thoroughly
-- Next: Advanced temporal validation in Chapter 4
+- Next: Advanced temporal validation in Part 4
 
 ---
 

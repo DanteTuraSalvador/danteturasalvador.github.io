@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 5: Integration and Deployment"
+title: "Part 5: Integration and Deployment"
 date: 2025-01-20
 category: ddd
 tags:
@@ -9,13 +9,13 @@ tags:
   - advanced
 series: clean-architecture
 chapter: 5
-prerequisites: "Chapter 4"
+prerequisites: "Part 4"
 estimated_time: "25 minutes"
-prev_title: "Chapter 4: Domain Layer Implementation"
+prev_title: "Part 4: Domain Layer Implementation"
 prev_url: "/ddd/2025/01/19/clean-architecture-chapter-04.html"
 ---
 
-# Chapter 5: Integration and Deployment
+# Part 5: Integration and Deployment
 
 ## Learning Objectives
 

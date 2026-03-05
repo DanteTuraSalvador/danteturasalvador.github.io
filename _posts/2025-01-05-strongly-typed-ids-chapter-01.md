@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 1: Problem - ID Type Confusion"
+title: "Part 1: Problem - ID Type Confusion"
 date: 2025-01-05
 category: ddd
 tags:
@@ -13,11 +13,11 @@ prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Value Objects Series"
 prev_url: "/ddd/2025/01/04/value-objects-chapter-04.html"
-next_title: "Chapter 2: Solution - StronglyTypedId Pattern"
+next_title: "Part 2: Solution - StronglyTypedId Pattern"
 next_url: "/ddd/2025/01/06/strongly-typed-ids-chapter-02.html"
 ---
 
-# Chapter 1: Problem - ID Type Confusion
+# Part 1: Problem - ID Type Confusion
 
 ## Learning Objectives
 
@@ -131,7 +131,7 @@ We need a way to:
 
 ## The Solution: Strongly Typed IDs
 
-In [Chapter 2](/2025/01/06/strongly-typed-ids-chapter-02.html), we'll explore the **StronglyTypedId pattern** and how it solves all these problems.
+In [Part 2](/2025/01/06/strongly-typed-ids-chapter-02.html), we'll explore the **StronglyTypedId pattern** and how it solves all these problems.
 
 ---
 
@@ -140,7 +140,7 @@ In [Chapter 2](/2025/01/06/strongly-typed-ids-chapter-02.html), we'll explore th
 - ID type confusion uses primitive types for domain identifiers
 - It causes type safety, parameter swapping, and maintainability issues
 - The solution is StronglyTypedId pattern
-- Next: Learn about StronglyTypedId in Chapter 2
+- Next: Learn about StronglyTypedId in Part 2
 
 ---
 

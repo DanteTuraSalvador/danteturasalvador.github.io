@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 2: Solution - Clean Architecture"
+title: "Part 2: Solution - Clean Architecture"
 date: 2025-01-17
 category: ddd
 tags:
@@ -9,15 +9,15 @@ tags:
   - beginner
 series: clean-architecture
 chapter: 2
-prerequisites: "Chapter 1"
+prerequisites: "Part 1"
 estimated_time: "20 minutes"
-prev_title: "Chapter 1: Problem - Layered Architecture Issues"
+prev_title: "Part 1: Problem - Layered Architecture Issues"
 prev_url: "/ddd/2025/01/16/clean-architecture-chapter-01.html"
-next_title: "Chapter 3: Implementation - Project Structure"
+next_title: "Part 3: Implementation - Project Structure"
 next_url: "/ddd/2025/01/18/clean-architecture-chapter-03.html"
 ---
 
-# Chapter 2: Solution - Clean Architecture
+# Part 2: Solution - Clean Architecture
 
 ## Learning Objectives
 
@@ -405,7 +405,7 @@ Project.Solution/
 - Testing is significantly easier
 - Implementations are swappable
 - Use for complex business applications
-- Next: Implement Clean Architecture project structure in Chapter 3
+- Next: Implement Clean Architecture project structure in Part 3
 
 ---
 

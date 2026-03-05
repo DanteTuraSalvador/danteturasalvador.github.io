@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 1: Problem - Exception-Driven Error Handling"
+title: "Part 1: Problem - Exception-Driven Error Handling"
 date: 2025-01-12
 category: ddd
 tags:
@@ -13,11 +13,11 @@ prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Smart Enums Series"
 prev_url: "/ddd/2025/01/11/smart-enums-chapter-04.html"
-next_title: "Chapter 2: Solution - Result Pattern"
+next_title: "Part 2: Solution - Result Pattern"
 next_url: "/ddd/2025/01/13/result-pattern-chapter-02.html"
 ---
 
-# Chapter 1: Problem - Exception-Driven Error Handling
+# Part 1: Problem - Exception-Driven Error Handling
 
 ## Learning Objectives
 
@@ -272,7 +272,7 @@ We need a way to:
 
 ## The Solution: Result Pattern
 
-In [Chapter 2](/2025/01/13/result-pattern-chapter-02.html), we'll explore the **Result pattern** and how it solves all these error handling problems.
+In [Part 2](/2025/01/13/result-pattern-chapter-02.html), we'll explore the **Result pattern** and how it solves all these error handling problems.
 
 ---
 
@@ -283,7 +283,7 @@ In [Chapter 2](/2025/01/13/result-pattern-chapter-02.html), we'll explore the **
 - Business validation should not throw exceptions
 - Error information is often lost in exceptions
 - The solution is Result pattern
-- Next: Learn about Result pattern in Chapter 2
+- Next: Learn about Result pattern in Part 2
 
 ---
 

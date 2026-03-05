@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 4: Advanced - Composing Value Objects"
+title: "Part 4: Advanced - Composing Value Objects"
 date: 2025-01-04
 category: ddd
 tags:
@@ -9,13 +9,13 @@ tags:
   - advanced
 series: value-objects
 chapter: 4
-prerequisites: "Chapter 3"
+prerequisites: "Part 3"
 estimated_time: "25 minutes"
-prev_title: "Chapter 3: Implementation - Your First Value Object"
+prev_title: "Part 3: Implementation - Your First Value Object"
 prev_url: "/ddd/2025/01/03/value-objects-chapter-03.html"
 ---
 
-# Chapter 4: Advanced - Composing Value Objects
+# Part 4: Advanced - Composing Value Objects
 
 ## Learning Objectives
 

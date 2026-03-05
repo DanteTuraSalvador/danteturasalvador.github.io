@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 1: Problem - CRUD Complexity"
+title: "Part 1: Problem - CRUD Complexity"
 date: 2025-01-21
 category: ddd
 tags:
@@ -13,11 +13,11 @@ prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Clean Architecture Series"
 prev_url: "/ddd/2025/01/20/clean-architecture-chapter-05.html"
-next_title: "Chapter 2: Solution - CQRS Pattern"
+next_title: "Part 2: Solution - CQRS Pattern"
 next_url: "/ddd/2025/01/22/cqrs-chapter-02.html"
 ---
 
-# Chapter 1: Problem - CRUD Complexity
+# Part 1: Problem - CRUD Complexity
 
 ## Learning Objectives
 
@@ -386,7 +386,7 @@ We need an architecture that:
 
 ## The Solution: CQRS
 
-In [Chapter 2](/2025/01/22/cqrs-chapter-02.html), we'll explore the **CQRS pattern** and how it solves all these CRUD complexity problems.
+In [Part 2](/2025/01/22/cqrs-chapter-02.html), we'll explore the **CQRS pattern** and how it solves all these CRUD complexity problems.
 
 ---
 
@@ -397,7 +397,7 @@ In [Chapter 2](/2025/01/22/cqrs-chapter-02.html), we'll explore the **CQRS patte
 - Performance degrades without separation
 - Testing becomes difficult with side effects
 - The solution is CQRS pattern
-- Next: Learn about CQRS in Chapter 2
+- Next: Learn about CQRS in Part 2
 
 ---
 

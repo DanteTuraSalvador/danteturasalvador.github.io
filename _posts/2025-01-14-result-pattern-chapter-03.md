@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 3: Implementation - Result and Result<T>"
+title: "Part 3: Implementation - Result and Result<T>"
 date: 2025-01-14
 category: ddd
 tags:
@@ -9,15 +9,15 @@ tags:
   - implementation
 series: result-pattern
 chapter: 3
-prerequisites: "Chapter 2"
+prerequisites: "Part 2"
 estimated_time: "30 minutes"
-prev_title: "Chapter 2: Solution - Result Pattern"
+prev_title: "Part 2: Solution - Result Pattern"
 prev_url: "/ddd/2025/01/13/result-pattern-chapter-02.html"
-next_title: "Chapter 4: Advanced - Chaining, Mapping, and Async Support"
+next_title: "Part 4: Advanced - Chaining, Mapping, and Async Support"
 next_url: "/ddd/2025/01/15/result-pattern-chapter-04.html"
 ---
 
-# Chapter 3: Implementation - Result and Result<T>
+# Part 3: Implementation - Result and Result<T>
 
 ## Learning Objectives
 
@@ -572,7 +572,7 @@ Result pattern has minimal overhead:
 
 ## Next Steps
 
-You've implemented a complete Result pattern! In [Chapter 4](/2025/01/15/result-pattern-chapter-04.html), we'll explore advanced features like:
+You've implemented a complete Result pattern! In [Part 4](/2025/01/15/result-pattern-chapter-04.html), we'll explore advanced features like:
 - Chaining operations with Bind
 - Transforming values with Map
 - Async operations with BindAsync
@@ -588,7 +588,7 @@ You've implemented a complete Result pattern! In [Chapter 4](/2025/01/15/result-
 - Add deconstruction for pattern matching
 - Implement extension methods for Bind and Map
 - Test thoroughly
-- Next: Advanced chaining and mapping in Chapter 4
+- Next: Advanced chaining and mapping in Part 4
 
 ---
 

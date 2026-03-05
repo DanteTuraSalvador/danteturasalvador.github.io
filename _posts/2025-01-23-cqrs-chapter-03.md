@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 3: Implementation - Commands and Queries"
+title: "Part 3: Implementation - Commands and Queries"
 date: 2025-01-23
 category: ddd
 tags:
@@ -9,15 +9,15 @@ tags:
   - implementation
 series: cqrs
 chapter: 3
-prerequisites: "Chapter 2"
+prerequisites: "Part 2"
 estimated_time: "30 minutes"
-prev_title: "Chapter 2: Solution - CQRS Pattern"
+prev_title: "Part 2: Solution - CQRS Pattern"
 prev_url: "/ddd/2025/01/22/cqrs-chapter-02.html"
-next_title: "Chapter 4: Advanced - Event Sourcing"
+next_title: "Part 4: Advanced - Event Sourcing"
 next_url: "/ddd/2025/01/24/cqrs-chapter-04.html"
 ---
 
-# Chapter 3: Implementation - Commands and Queries
+# Part 3: Implementation - Commands and Queries
 
 ## Learning Objectives
 
@@ -398,7 +398,7 @@ public class GetOrdersByCustomerQueryHandlerTests
 - Result pattern for error handling
 - Caching can be added to queries
 - Events provide decoupling
-- Next: Advanced Event Sourcing in Chapter 4
+- Next: Advanced Event Sourcing in Part 4
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 2: Solution - Result Pattern"
+title: "Part 2: Solution - Result Pattern"
 date: 2025-01-13
 category: ddd
 tags:
@@ -9,15 +9,15 @@ tags:
   - beginner
 series: result-pattern
 chapter: 2
-prerequisites: "Chapter 1"
+prerequisites: "Part 1"
 estimated_time: "20 minutes"
-prev_title: "Chapter 1: Problem - Exception-Driven Error Handling"
+prev_title: "Part 1: Problem - Exception-Driven Error Handling"
 prev_url: "/ddd/2025/01/12/result-pattern-chapter-01.html"
-next_title: "Chapter 3: Implementation - Result and Result<T>"
+next_title: "Part 3: Implementation - Result and Result<T>"
 next_url: "/ddd/2025/01/14/result-pattern-chapter-03.html"
 ---
 
-# Chapter 2: Solution - Result Pattern
+# Part 2: Solution - Result Pattern
 
 ## Learning Objectives
 
@@ -379,7 +379,7 @@ public class CustomerService
 - Error aggregation is built-in
 - Functional composition is supported
 - Use when operations can succeed or fail
-- Next: Implement Result and Result<T> in Chapter 3
+- Next: Implement Result and Result<T> in Part 3
 
 ---
 

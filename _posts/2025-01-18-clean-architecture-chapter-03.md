@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 3: Implementation - Project Structure"
+title: "Part 3: Implementation - Project Structure"
 date: 2025-01-18
 category: ddd
 tags:
@@ -9,15 +9,15 @@ tags:
   - implementation
 series: clean-architecture
 chapter: 3
-prerequisites: "Chapter 2"
+prerequisites: "Part 2"
 estimated_time: "30 minutes"
-prev_title: "Chapter 2: Solution - Clean Architecture"
+prev_title: "Part 2: Solution - Clean Architecture"
 prev_url: "/ddd/2025/01/17/clean-architecture-chapter-02.html"
-next_title: "Chapter 4: Domain Layer Implementation"
+next_title: "Part 4: Domain Layer Implementation"
 next_url: "/ddd/2025/01/19/clean-architecture-chapter-04.html"
 ---
 
-# Chapter 3: Implementation - Project Structure
+# Part 3: Implementation - Project Structure
 
 ## Learning Objectives
 
@@ -574,7 +574,7 @@ public class CustomerServiceTests
 - Implement interfaces for testability
 - Use cross-cutting concerns for infrastructure
 - Set up proper project references
-- Next: Implement domain layer details in Chapter 4
+- Next: Implement domain layer details in Part 4
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 4: Advanced - Event Sourcing"
+title: "Part 4: Advanced - Event Sourcing"
 date: 2025-01-24
 category: ddd
 tags:
@@ -9,13 +9,13 @@ tags:
   - advanced
 series: cqrs
 chapter: 4
-prerequisites: "Chapter 3"
+prerequisites: "Part 3"
 estimated_time: "25 minutes"
-prev_title: "Chapter 3: Implementation - Commands and Queries"
+prev_title: "Part 3: Implementation - Commands and Queries"
 prev_url: "/ddd/2025/01/23/cqrs-chapter-03.html"
 ---
 
-# Chapter 4: Advanced - Event Sourcing
+# Part 4: Advanced - Event Sourcing
 
 ## Learning Objectives
 

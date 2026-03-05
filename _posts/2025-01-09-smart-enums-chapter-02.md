@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 2: Solution - SmartEnum Pattern"
+title: "Part 2: Solution - SmartEnum Pattern"
 date: 2025-01-09
 category: ddd
 tags:
@@ -9,15 +9,15 @@ tags:
   - beginner
 series: smart-enums
 chapter: 2
-prerequisites: "Chapter 1"
+prerequisites: "Part 1"
 estimated_time: "20 minutes"
-prev_title: "Chapter 1: Problem - State Management"
+prev_title: "Part 1: Problem - State Management"
 prev_url: "/ddd/2025/01/08/smart-enums-chapter-01.html"
-next_title: "Chapter 3: Implementation - CheckIn/CheckOut State Machine"
+next_title: "Part 3: Implementation - CheckIn/CheckOut State Machine"
 next_url: "/ddd/2025/01/10/smart-enums-chapter-03.html"
 ---
 
-# Chapter 2: Solution - SmartEnum Pattern
+# Part 2: Solution - SmartEnum Pattern
 
 ## Learning Objectives
 
@@ -360,7 +360,7 @@ public class Visit
 - They encapsulate business rules
 - They enable state-specific behavior
 - Use when you have complex state management
-- Next: Implement a real CheckIn/CheckOut SmartEnum in Chapter 3
+- Next: Implement a real CheckIn/CheckOut SmartEnum in Part 3
 
 ---
 

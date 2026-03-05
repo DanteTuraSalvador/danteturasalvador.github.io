@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 3: Integration with Value Objects"
+title: "Part 3: Integration with Value Objects"
 date: 2025-01-07
 category: ddd
 tags:
@@ -9,13 +9,13 @@ tags:
   - integration
 series: strongly-typed-ids
 chapter: 3
-prerequisites: "Chapter 2"
+prerequisites: "Part 2"
 estimated_time: "30 minutes"
-prev_title: "Chapter 2: Solution - StronglyTypedId Pattern"
+prev_title: "Part 2: Solution - StronglyTypedId Pattern"
 prev_url: "/ddd/2025/01/06/strongly-typed-ids-chapter-02.html"
 ---
 
-# Chapter 3: Integration with Value Objects
+# Part 3: Integration with Value Objects
 
 ## Learning Objectives
 

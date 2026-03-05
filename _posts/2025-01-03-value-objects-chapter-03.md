@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 3: Implementation - Your First Value Object"
+title: "Part 3: Implementation - Your First Value Object"
 date: 2025-01-03
 category: ddd
 tags:
@@ -9,15 +9,15 @@ tags:
   - implementation
 series: value-objects
 chapter: 3
-prerequisites: "Chapter 2"
+prerequisites: "Part 2"
 estimated_time: "30 minutes"
-prev_title: "Chapter 2: Solution - Value Object Pattern"
+prev_title: "Part 2: Solution - Value Object Pattern"
 prev_url: "/ddd/2025/01/02/value-objects-chapter-02.html"
-next_title: "Chapter 4: Advanced - Composing Value Objects"
+next_title: "Part 4: Advanced - Composing Value Objects"
 next_url: "/ddd/2025/01/04/value-objects-chapter-04.html"
 ---
 
-# Chapter 3: Implementation - Your First Value Object
+# Part 3: Implementation - Your First Value Object
 
 ## Learning Objectives
 
@@ -221,7 +221,7 @@ var email = new Email("invalid-email");  // Should use Create()
 
 ## Next Steps
 
-You've implemented your first Value Object! In [Chapter 4](/2025/01/04/value-objects-chapter-04.html), we'll explore advanced concepts like composing Value Objects and using Money/Price.
+You've implemented your first Value Object! In [Part 4](/2025/01/04/value-objects-chapter-04.html), we'll explore advanced concepts like composing Value Objects and using Money/Price.
 
 ---
 

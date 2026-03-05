@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 4: Advanced - Chaining, Mapping, and Async Support"
+title: "Part 4: Advanced - Chaining, Mapping, and Async Support"
 date: 2025-01-15
 category: ddd
 tags:
@@ -9,13 +9,13 @@ tags:
   - advanced
 series: result-pattern
 chapter: 4
-prerequisites: "Chapter 3"
+prerequisites: "Part 3"
 estimated_time: "25 minutes"
-prev_title: "Chapter 3: Implementation - Result and Result<T>"
+prev_title: "Part 3: Implementation - Result and Result<T>"
 prev_url: "/ddd/2025/01/14/result-pattern-chapter-03.html"
 ---
 
-# Chapter 4: Advanced - Chaining, Mapping, and Async Support
+# Part 4: Advanced - Chaining, Mapping, and Async Support
 
 ## Learning Objectives
 

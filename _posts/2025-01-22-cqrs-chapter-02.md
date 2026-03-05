@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 2: Solution - CQRS Pattern"
+title: "Part 2: Solution - CQRS Pattern"
 date: 2025-01-22
 category: ddd
 tags:
@@ -9,15 +9,15 @@ tags:
   - beginner
 series: cqrs
 chapter: 2
-prerequisites: "Chapter 1"
+prerequisites: "Part 1"
 estimated_time: "20 minutes"
-prev_title: "Chapter 1: Problem - CRUD Complexity"
+prev_title: "Part 1: Problem - CRUD Complexity"
 prev_url: "/ddd/2025/01/21/cqrs-chapter-01.html"
-next_title: "Chapter 3: Implementation - Commands and Queries"
+next_title: "Part 3: Implementation - Commands and Queries"
 next_url: "/ddd/2025/01/23/cqrs-chapter-03.html"
 ---
 
-# Chapter 2: Solution - CQRS Pattern
+# Part 2: Solution - CQRS Pattern
 
 ## Learning Objectives
 
@@ -455,7 +455,7 @@ public class PaymentCommandHandler : ICommandHandler<ProcessPaymentCommand, Resu
 - Business logic remains in domain
 - Testing becomes simpler
 - Scalability improves significantly
-- Next: Implement Commands and Queries in Chapter 3
+- Next: Implement Commands and Queries in Part 3
 
 ---
 

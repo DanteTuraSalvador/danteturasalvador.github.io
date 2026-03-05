@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 4: Advanced - Temporal Validation & Business Rules"
+title: "Part 4: Advanced - Temporal Validation & Business Rules"
 date: 2025-01-11
 category: ddd
 tags:
@@ -9,13 +9,13 @@ tags:
   - advanced
 series: smart-enums
 chapter: 4
-prerequisites: "Chapter 3"
+prerequisites: "Part 3"
 estimated_time: "25 minutes"
-prev_title: "Chapter 3: Implementation - CheckIn/CheckOut State Machine"
+prev_title: "Part 3: Implementation - CheckIn/CheckOut State Machine"
 prev_url: "/ddd/2025/01/10/smart-enums-chapter-03.html"
 ---
 
-# Chapter 4: Advanced - Temporal Validation & Business Rules
+# Part 4: Advanced - Temporal Validation & Business Rules
 
 ## Learning Objectives
 

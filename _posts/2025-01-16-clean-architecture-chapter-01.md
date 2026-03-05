@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chapter 1: Problem - Layered Architecture Issues"
+title: "Part 1: Problem - Layered Architecture Issues"
 date: 2025-01-16
 category: ddd
 tags:
@@ -13,11 +13,11 @@ prerequisites: None
 estimated_time: "15 minutes"
 prev_title: "Back to Result Pattern Series"
 prev_url: "/ddd/2025/01/15/result-pattern-chapter-04.html"
-next_title: "Chapter 2: Solution - Clean Architecture"
+next_title: "Part 2: Solution - Clean Architecture"
 next_url: "/ddd/2025/01/17/clean-architecture-chapter-02.html"
 ---
 
-# Chapter 1: Problem - Layered Architecture Issues
+# Part 1: Problem - Layered Architecture Issues
 
 ## Learning Objectives
 
@@ -286,7 +286,7 @@ We need an architecture that:
 
 ## The Solution: Clean Architecture
 
-In [Chapter 2](/2025/01/17/clean-architecture-chapter-02.html), we'll explore the **Clean Architecture pattern** and how it solves all these architectural problems.
+In [Part 2](/2025/01/17/clean-architecture-chapter-02.html), we'll explore the **Clean Architecture pattern** and how it solves all these architectural problems.
 
 ---
 
@@ -297,7 +297,7 @@ In [Chapter 2](/2025/01/17/clean-architecture-chapter-02.html), we'll explore th
 - Tight coupling makes maintenance difficult
 - Testing is complex due to dependencies
 - The solution is Clean Architecture
-- Next: Learn about Clean Architecture in Chapter 2
+- Next: Learn about Clean Architecture in Part 2
 
 ---
 
