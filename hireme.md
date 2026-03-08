@@ -18,8 +18,18 @@ I'm an experienced **Software Development Team Lead, Software Architect, and Dat
 
 ## Professional Experience
 
+### C# Programmer, Integrations (EDI, NetSuite) -- BeAwesome Inc.
+**Dec 2025 -- Present** | Client: Unilever
+
+- Designed and developed middleware services integrating Toll Group (3PL warehouse) with enterprise logistics platform using C# .NET
+- Built custom inbound processors for inventory adjustments, shipment dispatches, inventory receipts, and inventory status changes
+- Developed outbound processors for order fulfillment, item master sync, and expected receipts
+- Implemented WebJob-based queue processing for both inbound and outbound transaction flows with robust error handling and retry patterns
+- Built ETL-style data transformations between XML (SOAP/webhook), JSON, and internal domain models
+- Implemented file archival via domain events to Azure Blob Storage with proper error isolation
+
 ### .NET Developer -- Radix Systems Services Corporation
-**Aug 2025 -- Present** | Client: SM Retail Incorporated
+**Aug 2025 -- Dec 2025** | Client: SM Retail Incorporated
 
 - Develop and maintain high-volume ETL pipelines on .NET Framework for business intelligence
 - Manage and optimize ETL processes for PostgreSQL databases
@@ -57,7 +67,13 @@ I actively maintain open-source projects demonstrating production-quality engine
 - [TestNest.StronglyTypeId](https://github.com/DanteTuraSalvador/TestNest.StronglyTypeId) -- Strongly Typed IDs
 - [TestNest.SmartEnums](https://github.com/DanteTuraSalvador/TestNest.SmartEnums) -- Smart Enums with state machines
 - [TestNest.ResultPattern](https://github.com/DanteTuraSalvador/TestNest.ResultPattern) -- Result Pattern implementation
+- [TestNest.SmartEnumResult](https://github.com/DanteTuraSalvador/TestNest.SmartEnumResult) -- Smart Enum with Result Pattern
+- [TestNest.DomainEF](https://github.com/DanteTuraSalvador/TestNest.DomainEF) -- Domain Model with Entity Framework
+- [Modular-Clean-Architecture-API](https://github.com/DanteTuraSalvador/Modular-Clean-Architecture-API) -- Modular API with Clean Architecture
 - [SkillManager-Blazor-API](https://github.com/DanteTuraSalvador/SkillManager-Blazor-API) -- .NET 9, Blazor Server, Clean Architecture, .NET Aspire
+- [SkillManager-Blazor](https://github.com/DanteTuraSalvador/SkillManager-Blazor) -- Blazor Server, Entity Framework Core, Docker
+- [SkillsManager-RazorPages](https://github.com/DanteTuraSalvador/SkillsManager-RazorPages) -- ASP.NET Core Razor Pages application
+- [SkillsManager-MVC](https://github.com/DanteTuraSalvador/SkillsManager-MVC) -- ASP.NET Core MVC with Phoenix admin template
 
 ## Get In Touch
 
